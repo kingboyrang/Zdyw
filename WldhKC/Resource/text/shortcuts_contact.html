@@ -1,0 +1,59 @@
+data:text/html;charset=UTF-8,<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
+        <meta name='apple-mobile-web-app-capable' content='yes' />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+            <meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+            <link rel='apple-touch-icon-precomposed' href='data:image/png;base64,$ICON_DATA$'/>
+            <link rel='apple-touch-startup-image' href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAHMCAMAAACTPIE7AAAAA1BMVEUAAACnej3aAAAAHGlET1QAAAACAAAAAAAAAOYAAAAoAAAA5gAAAOYAAAGOqPPJgwAAAVpJREFUeAHs0IEAAAAAw6D5U1/hAIVQYcCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG3oEBAAD//wPx2XQAAAFYSURBVO3QgQAAAADDoPlTX+EAhVBhwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwYMGDBgwIABAwbegQFA6gAB+BVsJQAAAABJRU5ErkJggg=='/>
+            <title>$USER_NAME$</title>
+            <style type='text/css'> * {margin:0; padding:0;}body{font-family:'Times New Roman'; background:#333333; text-align:center; font-size:16px; color:#fff;}
+                #warp { width:100%%; }
+                #warp .topmenu{line-height:45px; font-size:20px; color:#e4f5fe; font-family:'Times New Roman'; text-align:center; background:#1fb6f1; text-shadow:2px 2px 2px #000; }
+                #warp .content{line-height:28px; position:relative; width:94%%; margin:20px auto 0; padding-bottom:30px; color:#646464; background:#f1f1f1; border:2px solid #4d4d4d; -moz-border-radius:12px; -webkit-border-radius:12px; }
+                #warp .userPic{margin-top:50px;} .userPic img{width:57px; height:57px; }
+                #warp .userName{line-height:24px; color:#e94e2b;}
+                #warp .addPic{margin-top:10px;} .addPic img{ width:23px; height:20px; }
+                #warp .tipsText{margin-top:30px; color:#646464; text-align:10px; font-size:12px; line-height:14px;}
+                #warp .tail{position:absolute; bottom:-20px; width:200px; height:20px; background:#333333;}
+                </style>
+            </style>
+            <style type='text/css'>
+                #warp2 { width:100%%; }
+                #warp2 .topmenu {line-height:45px; font-size:20px; color:#e4f5fe; font-family:'Times New Roman'; text-align:center; background:#e94e2b; text-shadow:2px 2px 2px #000; }
+                #warp2 .errorText{margin-top:100px;}
+                </style>
+            <script type ='text/javascript'>
+                if (!window.navigator.standalone) {
+                    window.onload = function() { setTimeout(scrollTo, 0, 0, 1); }
+                }
+                </script>
+    </head>
+    <body style='margin-left:0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px;'>
+        <a id='link' href='$APP_SCHEME$://shortcutsContact,$PERSON_ID$'></a>
+        <div id="warp2" style='position:absolute;left: 0; top: 0;'>
+            <div class='topmenu'><p class='box'>联系人桌面快捷方式</p></div>
+            <div class="errorText">
+                <p>创建联系人桌面快捷方式需要JavaScript支持</p>
+                <p>请在系统“设置->Safari”里面开启JavaScript</p>
+            </div>
+        </div>
+        
+        <script type='text/javascript'>
+            document.getElementById("warp2").style.display = 'none';
+            if (window.navigator.standalone){
+                var e=document.getElementById("link");
+                var ev=document.createEvent("MouseEvents");
+                ev.initEvent("click",true,true);
+                e.dispatchEvent(ev);
+            }else{
+                var run=function(){location.herf=document.getElementById("link").href;};
+                document.write("<div id='warp' style='position:absolute;left: 0; top: 0;'> <div class='topmenu'><p class='box'>联系人桌面快捷方式</p></div>");
+                document.write("<div class='content'><p class='userPic'><img src='data:image/png;base64,$ICON_DATA$' onclick='run();'/></p><p class='userName'>$USER_NAME$</p>");
+                document.write("<div class='addPic'><p class='msg'><p>点击屏幕下方按钮</p><p><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAoCAYAAACB4MgqAAAAHGlET1QAAAACAAAAAAAAABQAAAAoAAAAFAAAABQAAAIXiv3M3QAAAeNJREFUWAnM1sFLwmAYBvCBUQiCl4SiUxB0LOhS1/4FJ4QidJMOHoOQ8CBlDE8WCELQpYOnpI6GWBcJLD156BISg4bhSQgcg/W8Y4sxmn7bSnd40LHP5/3tY045VVW5WSQWi4Wj0eiJ29kzQROW4DzPq8BfuMHPDF4ul5cJruOvcCEBJxfgC7iOrwA/z4r3DVzf/Vvggyx4v8Hp1qkDH5qE9yOc8E3gw+PwfoUTvgN8xA7vZzjhu8Cv/Ib/eZ5iES30kprdEPNgrNlC9hOJxDnjvDesXzV30Pu/gI9QfGgtNo5xLojw+KGpADpgxFo3UETHutGpwc0/BE5Lk8mk3Gq1OihqIAVkEdFuPwxaAvbMA9aK76Nz0+jn3MJTqdRXr9d7QtE9smcU6uBLgEdON4Jh/QD9OzTLFZzQkiQ1UXCHbJjQBxg+ZABYd9PJ8RD4XVs4MI0JucZ57RuPohCwN/8MNl9czS2c0Nr9DHQE4OdpoTOZTF8Uxe1x8InPeKDpr2l3WuhsNvspy/IjNq3gGg50AOD6tND5fF7S0QLgC17gR17Q8XhcYf28IAgfiqI8AHyKzCH2TxU6aRfs9hqGMj3u0un0MJfL9Uul0nu1Wn010m63X1jgxWJRhKOBHCMaGq/cNwAAAP//aqCLegAAAhpJREFU7Za/S0JRFMelJaIhaAgaaohoaW1qa3MIGlRU1BwcgpCWhmhraLRFRJDIBpcaJMiIMOIZDVKU9AMJIQwM/wGLxMrse8Ijt9dTuSrZr+HLue++e77nc+7zXZ8uEAj0G43GklqlUklXTQaDYUO9nq/dbvdDMBi8jcfj5/l8/hAeShXtck616Pf7M+XcBcQOqMKkkwU3mUyDKPQiFrPZbM8+ny+TSqVONCBXMbcEzUCTgkZFD/WYmsdaBZqDKsA8lgbHbi9zETTx6vV673K53BEMlbLWEKehMagT+lSU59hHHUOh0A3WKBA1q5kvDW6xWBJUyOFwPCUSibNygR3EWWioWiGteTUwXYfD4RTWKhA1rwlN81Lg2OFeqOhyufLpdPoYBgeQG+omM1mJ4PT0IpHINTwUyFLPSxZcb7fbH7PZbBzG29BovQK17jO42WwuRqPRJNYq0FStHL4nBe50OhdjsdgFkjehATZpNBI4QcPzCh709PTshSfQhfdpHbGH58QoBe7xeOaRvAX1iSaNjq1Wa5GOTeTvQxPsA9hhNHVJjbUEvFAomGE+zgWajclk8hQeBF3xBCh4jfcETaLjWquO1I6LBbTMGpjbQw4dm+8vNn4aKwzMsVXgH/69uGATcUTMZVgxtgpc+sgTweqNRWAe/x1w7rjdUXrH2w3M9f/BeSe+Kv6+HccRRV92yjeW5pcnncs/EvwNg052r2QIgyIAAAAASUVORK5CYII='/> 或 <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAoCAYAAACB4MgqAAAAHGlET1QAAAACAAAAAAAAABQAAAAoAAAAFAAAABQAAAC4/qIQJgAAAIRJREFUWAli+P//PwO1cGhoKH9ISMh/bBgkRy17QOZQzdEgw4asw2fOnCmJLbRBYiC5QRviow4nIt9RNY2PhvhoiBMRAqASYzSpEBFQo5lzNKkQkUxAgTSaVEaTCjlJBdgslcPVuhtocfT2PEoaH7IOnz59uuFAhywu+9Hb8yghPpQcDgAAAP//iKK+TQAAAJxJREFUY/j//z8DDE+fPt0wJCTk/2DEM2fOlIS5E0TDHQ3iDFmHAx0vBsT7ycWfPn06jCu2QHLkmgvVxw2k4QENZ0AFh6zD0T1CEh+UDnGFOHoaRQ49ctgkOYyQBaMOR0rLuAJrNMRBITOaVEaTChEhMJpUiAyk0VJlNKmMJhUiQ2BIJxWg40Ft5v04MEp7GqiGooKBIs1YLKebwwGtqLeKeZ7CIQAAAABJRU5ErkJggg=='/></p><p class='msg'>然后选择“添加至主屏幕”</p>");
+                document.write("<div class='tipsText'><hr size='2px'/><p>&nbsp;</p><p align='center'>小提示:</p><p>1.若您需要更新联系人的头像或名称,请在应用内更新后,再手动添加到桌面</p><p>2.若通讯录中联系人被删除,对应桌面图标也将无法使用</p></div>");
+                document.write("<div class='tail'></div></div></div></div>");
+            }
+            </script>
+    </body>
+</html>

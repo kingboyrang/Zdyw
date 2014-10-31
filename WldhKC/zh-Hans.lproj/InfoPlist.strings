@@ -1,0 +1,17 @@
+/* Localized versions of Info.plist keys */
+
+"app_name" = "KC";//品牌名称
+"back" = "返回";
+"me_know" =  "我知道了";
+"data_input" = "数据提交中，请稍候...";
+"net_error" = "请检查您的网络后重试";
+"canner" = "取消";
+"try_again" = "重试";
+"sure" = "确定";
+"waiting" = "请稍候";
+"good" = "好的";
+"no_network" = "无网络";
+"tip" = "提示";
+"look" = "查看";
+
+"input_right_email" = "输入邮箱格式错误";
