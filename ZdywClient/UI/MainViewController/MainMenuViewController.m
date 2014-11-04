@@ -89,7 +89,7 @@
     
     NSLog(@"AppDelegate启动时的初始化工作提取到这里来处理");
     //云之讯初始化工作(AppDelegate启动时的初始化工作提取到这里来处理)
-    [self initUCSServer];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -114,24 +114,7 @@
     }
 
 }
-//云之讯初始化工作
-- (void)initUCSServer{
-    ZdywAppDelegate *app=(ZdywAppDelegate*)[[UIApplication sharedApplication] delegate];
-    //初始化云之讯
-    dispatch_async(dispatch_get_main_queue(), ^{
-        if (!app.ucsFuncEngine) {
-            app.ucsFuncEngine=[UCSFuncEngine getInstance];
-        }else{
-            //云之讯未连接
-            if (![app.ucsFuncEngine isConnected]) {
-                NSString *token = [ZdywUtils getLocalStringDataValue:kUCSTokenId];
-                if ([token length]>0) {
-                    [app.ucsFuncEngine connect:token];
-                }
-            }
-        }
-    });
-}
+
 #pragma mark handle direct call
 - (void)didReceiveMemoryWarning
 {

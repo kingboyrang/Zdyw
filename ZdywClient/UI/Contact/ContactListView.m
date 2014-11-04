@@ -38,13 +38,16 @@
     [super awakeFromNib];
     [self addObservers];
     [self initData];
-    BOOL ret = [[ContactManager shareInstance] addressBookIsAuthentication:YES];
-    if (ret) {
-        [_contactListTableView setHidden:NO];
-    } else {
-        [self createNotReadAddressBookTips];
-        [_contactListTableView setHidden:YES];
-    }
+    /***
+     BOOL ret = [[ContactManager shareInstance] addressBookIsAuthentication:YES];
+     if (ret) {
+     [_contactListTableView setHidden:NO];
+     } else {
+     [self createNotReadAddressBookTips];
+     [_contactListTableView setHidden:YES];
+     }
+     ***/
+    [self createNotReadAddressBookTips];
     _contactListTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [_addNewContactBtn addTarget:self action:@selector(addOneNewContact) forControlEvents:UIControlEventTouchUpInside];
 }
@@ -54,19 +57,20 @@
 }
 //第一次安装时无法取得通讯录问题
 - (void)loadFirstContact{
-    NSUserDefaults *usDeaults = [NSUserDefaults standardUserDefaults];
-    if ([usDeaults boolForKey:kLoadContactFlag]) {
-        [usDeaults setBool:NO forKey:kLoadContactFlag];
-        [usDeaults synchronize];
-        BOOL ret = [[ContactManager shareInstance] addressBookIsAuthentication:YES];
-        if (ret) {
-            [_contactListTableView setHidden:NO];
-            if (_contactListTableView&&[self.subviews containsObject:_notReadTipsView]) {
-                [_notReadTipsView removeFromSuperview];
-            }
-            [self contactData];
-        }
-        //_notReadTipsView
+    BOOL ret = [[ContactManager shareInstance] addressBookIsAuthentication:YES];
+    if (ret) {
+        _notReadTipsView.hidden=YES;
+        [self sendSubviewToBack:_notReadTipsView];
+        [_contactListTableView setHidden:NO];
+    } else {
+        _notReadTipsView.hidden=NO;
+        [self bringSubviewToFront:_notReadTipsView];
+        [_contactListTableView setHidden:YES];
+    }
+    //显示所有联系人
+    if (!self.isAllowShowContact) {
+        self.isAllowShowContact=YES;
+        [[ContactManager shareInstance] loadAllContact];
     }
 }
 #pragma mark - ObserversMethod
@@ -121,8 +125,7 @@
         [_searchTextField setTintColor:[UIColor grayColor]];
     }
 }
-
-- (void)contactData{
+- (void)reloadContactData{
     NSDictionary *dict = nil;
     dict = [[ContactManager shareInstance] sortContactDict];
     if (dict) {
@@ -133,8 +136,15 @@
         }
         [_contactListTableView reloadData];
     }
+    if (!_notReadTipsView.hidden) {
+        _notReadTipsView.hidden=YES;
+        [self sendSubviewToBack:_notReadTipsView];
+        [_contactListTableView setHidden:NO];
+    }
 }
-
+- (void)contactData{
+    [self performSelectorOnMainThread:@selector(reloadContactData) withObject:nil waitUntilDone:NO];
+}
 - (void)createNotReadAddressBookTips{
     _notReadTipsView = [[UIView alloc] initWithFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, 568)];
     [_notReadTipsView setBackgroundColor:[UIColor whiteColor]];

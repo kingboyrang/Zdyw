@@ -20,7 +20,7 @@
 @property (nonatomic, strong) UIView *notReadTipsView;
 @property (nonatomic, assign) id <ContactListViewDelegate> delegate;
 @property (nonatomic, strong) IBOutlet UIButton              *addNewContactBtn;
-
+@property (nonatomic, assign) BOOL isAllowShowContact;
 //解决第一次安装时无法取得通讯录问题
 - (void)loadFirstContact;
 @end

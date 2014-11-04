@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/UI/CallView/CallBackViewController.m \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/UI/CallView/CallBackViewController.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/UI/CallView/CallInfoNode.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/UI/CallView/CallWrapper.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/UI/Common/CustomPointView.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywContact/include/ContactRecordNode.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywContact/include/ContactManager.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywContact/include/ContactNode.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywContact/include/ContactType.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywContact/include/ContactAddressNode.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywContact/include/T9SearchEngine.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywContact/include/RecordEngine.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywDB/ZdywDBManager.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywDB/FMDataBase/fmdb/FMDB.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywDB/FMDataBase/fmdb/FMDatabase.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywDB/FMDataBase/fmdb/FMResultSet.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywDB/FMDataBase/fmdb/FMDatabasePool.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywDB/FMDataBase/fmdb/FMDatabaseAdditions.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywDB/FMDataBase/fmdb/FMDatabaseQueue.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywContact/include/CommonContactEngine.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywContact/include/RecordMegerNode.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywContact/include/DeskContactEngine.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywContact/include/PhoneOnwerShipEngine.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/ZdywContact/ucs/UCSTokenManager.h

@@ -162,7 +162,4 @@ else {a = Obj;}}
 #define kUCSTokenId                     @"kUCSTokenId"        //云之讯token保存id
 #define kUCSClientNumberId              @"kUCSClientNumberId" //保存云之讯ClientNumber
 
-#define kLoadContactFlag                @"kLoadContactFlag"    //是否可以加载联系人
-#define kUCSInitFlag                    @"kUCSInitFlag"      //是否可以初始化云之讯
-#define kLoadUpbkAttFlag                @"kLoadUpbkAttFlag"      //是否可以加载updbkAtt.dat文件
 #endif

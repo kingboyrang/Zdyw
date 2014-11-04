@@ -12,13 +12,17 @@
 	<dict>
 		<key>B10A23CC-EA49-41BF-8DB3-62EE583FA1E6</key>
 		<string>http://172.16.10.10/svn/NetDevelop_svn/phone_sales/zd_dev_svn/client_ios</string>
+		<key>F431D6DBA3931A18A40C5A089C2369FAEBDCED78</key>
+		<string>https://github.com/kingboyrang/Zdyw.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>client_ios/Trunk/Zdyw/ZdywClient.xcodeproj/project.xcworkspace</string>
+	<string>ZdywClient.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B10A23CC-EA49-41BF-8DB3-62EE583FA1E6</key>
-		<string>../../../../..</string>
+		<string>../../../client_ios</string>
+		<key>F431D6DBA3931A18A40C5A089C2369FAEBDCED78</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>
@@ -26,11 +30,11 @@
 		<string>http://172.16.10.10/svn/NetDevelop_svn</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>http://172.16.10.10/svn/NetDevelop_svn/phone_sales/zd_dev_svn/client_ios/client_ios/Trunk/Zdyw/ZdywClient.xcodeproj</string>
+	<string>https://github.com/kingboyrang/Zdyw.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B10A23CC-EA49-41BF-8DB3-62EE583FA1E6</string>
+	<string>F431D6DBA3931A18A40C5A089C2369FAEBDCED78</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -40,6 +44,14 @@
 			<string>B10A23CC-EA49-41BF-8DB3-62EE583FA1E6</string>
 			<key>IDESourceControlWCCName</key>
 			<string>client_ios</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F431D6DBA3931A18A40C5A089C2369FAEBDCED78</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Zdyw</string>
 		</dict>
 	</array>
 </dict>

@@ -1,0 +1,32 @@
+dependencies: \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl_wrapper.m \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl_wrapper.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/rsa.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/asn1.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/e_os2.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/opensslconf.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/bio.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/crypto.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/stack.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/safestack.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/opensslv.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/ossl_typ.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/symhacks.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/bn.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/pem.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/evp.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/objects.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/obj_mac.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/x509.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/buffer.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/ec.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/ecdsa.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/ecdh.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/dsa.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/dh.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/sha.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/x509_vfy.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/lhash.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/pkcs7.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/pem2.h \
+  /Users/zhongduan-mini/Desktop/ProjectManager/Zdyw/ZdywClient/Logic/AlixPay/source/openssl/md5.h

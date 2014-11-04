@@ -48,17 +48,16 @@
 {
    
     self.isNewMsg = NO;
-    [self createMainView];
+    self.ucsFuncEngine=[UCSFuncEngine getInstance];
     //初始化联系人相关数据
     [self createContactServer];
-    [self performSelectorInBackground:@selector(backgroundLoadContact) withObject:nil];
     //[[ContactManager shareInstance] loadAllContact];
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     // Override point for customization after application launch.
     [self initAppSetting];
     //初始化http server多点接入
     [MutilPointDetectController shareInstance].delegate = self;
-    
+    [self createMainView];
     [self checkUpdateInfo];
     
     //注册远程push
@@ -72,9 +71,6 @@
          UIRemoteNotificationTypeSound];
     }
     return YES;
-}
-- (void)backgroundLoadContact{
-[[ContactManager shareInstance] loadAllContact];
 }
 // Handle an actual notification
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
@@ -297,7 +293,6 @@
     }
     
 }
-
 - (void)initAppSetting{
     NSUserDefaults *usDeaults = [NSUserDefaults standardUserDefaults];
     [usDeaults setObject:kZdywAppleID forKey:kZdywDataKeyAppID];
@@ -308,9 +303,7 @@
     [usDeaults setObject:kInvite forKey:kZdywDataKeyInviteNum];
     [usDeaults setObject:@"" forKey:kUCSTokenId];
     [usDeaults setObject:@"" forKey:kUCSClientNumberId];
-    [usDeaults setBool:YES forKey:kLoadContactFlag];//是否加载联系人
-    [usDeaults setBool:YES forKey:kUCSInitFlag];//是否初始化云之讯
-    [usDeaults setBool:YES forKey:kLoadUpbkAttFlag];//是否初始化云之讯
+   
     //http网关接口的相关信息
     if([[usDeaults objectForKey:kAGWAnType] length] <= 0)  //算法编码
     {
